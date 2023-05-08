@@ -7,10 +7,5 @@
 3. $a \leq b$ and $b \leq c$ implies $a \leq c$ (transitivity)
 
 The **Möbius Function** of a poset is a function $\mu: P \times P \rightarrow \mathbb{Z}$ such that:
-$$
-\mu(a, b) =
-    \begin{cases}
-        1 & \text{if } a = c \\
-        -\sum_{a \leq b < c} \mu(a, c) & \text{if } a < c \\    
-    \end{cases}
-$$
+1. $a = c$: 1
+2. $a \leq c$: $-\sum_{a \leq b < c} \mu(a, c)$
